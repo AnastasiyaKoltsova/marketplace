@@ -21,15 +21,13 @@ body {
     overflow-x: hidden;
 
     font-family: 'Segoe UI', sans-serif;
+    background-color: #6725A8;
 }
 
+/* header */
+
 header {
-    background-color: #6725A8;
     color: #fff;
-
-    font-weight: 600;
-    font-size: 23px;
-
     padding: 13px;
 }
 
@@ -37,4 +35,172 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: start;
+}
+
+h1 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 23px;
+    margin: 0;
+}
+
+/* main */
+
+main {
+    background-color: #f6f6fa;
+    padding: 14px;
+    border-radius: 50px 50px 0 0;
+}
+
+/* main - header */
+
+h2 {
+    margin: 1px 2px 2px 1px;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+/* main - choose all */
+
+.chooseAll {
+    margin: 18px 0px 17px 3px;
+
+    display: grid;
+    grid-template-columns: 11px 1fr 27px;
+    gap: 22px;
+    align-items: center;
+}
+
+.chooseAll input {
+    width: 22px;
+    height: 22px;
+    border-radius: 10px;
+}
+
+.chooseAll img {
+    width: 22px;
+}
+
+/* main - goods */
+
+.goods {
+    display: flex;
+    flex-direction: column;
+}
+
+.goods__item {
+    border-bottom: 1px solid #dddde1;
+    
+    width: 290px;
+
+    padding-top: 14px;
+
+    display: grid;
+    grid-template-areas: 
+    "image about"
+    "amount amount";
+}
+
+.goods__item--1 {
+    border-top: 1px solid #dddde1;
+}
+
+.goods__item-photo {
+    width: 82px;
+    grid-area: image;
+    margin: -2px 17px 9px 0;
+}
+
+.goods__item-about {
+    grid-area: about;
+
+    margin-top: 3px;
+    margin-left: -12px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+
+    font-size: 14px;
+}
+
+.goods__item-about__price {
+    display: flex;
+    align-items: end;
+    gap: 4px;
+}
+
+.goods__item-about--bold {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.goods__item-about--crossed {
+    text-decoration: line-through;
+    text-decoration: dotted;
+    font-weight: 600;
+    font-size: 13px;
+    color: #9897af;
+    text-decoration: line-through;
+    border-bottom: 1px dashed #dddde1;
+    margin-bottom: -2px;
+    margin-left: 2px;
+}
+
+.goods__item-about--item3 {
+    margin-top: 2px;
+    margin-left: 0px;
+    font-size: 13px;
+}
+
+.goods__item-about--item4 {
+    margin-top: 2px;
+    margin-left: 0px;
+    font-size: 13px;
+    color: #a3a3b8;
+}
+
+.goods__item-amount {
+    grid-area: amount;
+    
+    display: flex;
+    align-items: center;
+
+    gap: 17px;
+
+    margin-top: 3px;
+    margin-bottom: 16px;
+}
+
+.goods-couter {
+    display: flex;
+    align-items: center;
+    margin-top: -1px;
+    gap: 2px;
+    background-color: #fff;
+}
+
+.goods-couter button {
+    width: 35px;
+    height: 32px;
+    font-size: 19px;
+    background-color: #fff;
+    border: none;
+}
+
+.goods__item-amount--red {
+    color: #fe5349;
+    font-size: 13px;
+    margin-left: -1px;
+    margin-right: 11px;
+}
+
+.goods__item-amount--like {
+    margin-left: 7px;
+    margin-top: -1px;
+}
+
+.goods__item-amount img {
+    display: block;
+    width: 20px;
 }
